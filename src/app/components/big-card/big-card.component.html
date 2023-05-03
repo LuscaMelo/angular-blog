@@ -1,13 +1,14 @@
 <div class="w-full bg-primary">
     <div class="container px-5 cursor-pointer">
-        <div class="mb-4">
-            <img class="w-full h-[400px] object-cover" src="assets/bmw.jpg" alt="bmw">
-        </div>
-        <div class="text-gray-500">
-            <span class="text-xs">April 11, 2023</span>
-            <h3 class="text-3xl text-white font-semibold my-3">Mauris vel odio quis velit dictum pulvinar</h3>
-            <p>Ut sed lectus vitae nunc consectetur lobortis ac non ipsum. Pellentesque ligula ligula, finibus vel
-                scelerisque.</p>
-        </div>
+        <a [routerLink]="['post', id]">
+            <div class="mb-4">
+                <img class="w-full h-[400px] object-cover" src={{postImg}} alt="bmw">
+            </div>
+            <div class="text-gray-500">
+                <span class="text-xs">{{postDate}}</span>
+                <h3 class="text-3xl text-white font-semibold my-3">{{postTitle}}</h3>
+                <p>{{postDescription}}</p>
+            </div>
+        </a>
     </div>
 </div>

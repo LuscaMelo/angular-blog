@@ -1,0 +1,18 @@
+<div class="bg-primary min-h-[100vh]">
+    <div class="flex-row lg:flex gap-10 py-[7.5rem] lg:py-[12rem] container px-5 mx-auto text-white">
+        <div class="flex-1">
+            <div class="h-full">
+                <img class="h-full object-cover" src={{postImg}} alt="" srcset="">
+            </div>
+        </div>
+        <div class="flex-1 py-10">
+            <span class="text-sm text-gray-500">{{postDate}}</span>
+            <h1 class="font-semibold text-2xl lg:text-lg mt-5">{{postTitle}}</h1>
+            <p class="text-gray-500 mt-4 text-sm">{{postDescription}}</p>
+            <button
+                class="bg-gradient-to-r from-rose-600 to-orange-600 text-white py-3 px-8 rounded mt-14 ml-auto font-semibold"
+                routerLink="">Read
+                more</button>
+        </div>
+    </div>
+</div>
