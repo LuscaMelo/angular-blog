@@ -12,6 +12,5 @@ export class NavbarComponent {
 
   setNav() {
     this.nav = !this.nav
-    this.nav === true ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto"
   }
 }
