@@ -5,6 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
 
+
+export class NavbarComponent {
+  nav: boolean = false
+
+  setNav() {
+    this.nav = !this.nav
+    this.nav === true ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto"
+  }
 }
