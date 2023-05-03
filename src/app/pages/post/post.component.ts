@@ -21,6 +21,8 @@ export class PostComponent {
   ngOnInit(): void {
     this.route.paramMap.subscribe(value => this.id = value.get("id"))
     this.setValuesToComponent(this.id)
+
+    window.scrollTo(0, 0)
   }
 
   setValuesToComponent(id: string | null) {

@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  ngOnInit(): void {
+    window.scrollTo(0, 0)
+  }
+
 }
+
+
+
