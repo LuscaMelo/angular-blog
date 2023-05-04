@@ -2,27 +2,27 @@
     <div class="h-full container px-5 mx-auto">
         <div class="h-full flex items-center justify-between">
             <div class="flex items-center">
-                <div
-                    class="flex justify-center items-center bg-gradient-to-r from-rose-600 to-orange-600 text-white font-bold w-[35px] h-[35px] rounded-full">
+                <div routerLink=""
+                    class="flex justify-center items-center bg-gradient-to-r from-rose-600 to-orange-600 text-white font-bold cursor-pointer w-[40px] h-[40px] rounded-full scale-95 hover:scale-100 duration-300">
                     D
                 </div>
                 <div class="hidden md:flex">
                     <ul class="flex gap-5 text-xs ml-5 font-bold">
-                        <li class="cursor-pointer">LEARN</li>
+                        <li class="cursor-pointer hover:text-gray-400">LEARN</li>
                         <li class="cursor-pointer text-white">BLOG</li>
-                        <li class="cursor-pointer">BOOKMARKS</li>
-                        <li class="cursor-pointer">UI KIT</li>
-                        <li class="cursor-pointer">LAIN NYA</li>
+                        <li class="cursor-pointer hover:text-gray-400">BOOKMARKS</li>
+                        <li class="cursor-pointer hover:text-gray-400">UI KIT</li>
+                        <li class="cursor-pointer hover:text-gray-400">LAIN NYA</li>
                     </ul>
                 </div>
             </div>
             <div class="gap-4 items-center text-xl hidden md:flex">
-                <i class="fa-brands fa-twitter cursor-pointer"></i>
-                <i class="fa-brands fa-instagram cursor-pointer"></i>
-                <i class="fa-brands fa-dribbble cursor-pointer"></i>
+                <i class="fa-brands fa-twitter cursor-pointer hover:text-gray-300 duration-300"></i>
+                <i class="fa-brands fa-instagram cursor-pointer hover:text-gray-300 duration-300"></i>
+                <i class="fa-brands fa-dribbble cursor-pointer hover:text-gray-300 duration-300"></i>
             </div>
             <div class="text-2xl md:hidden cursor-pointer" (click)="setNav()">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars text-gray-300"></i>
             </div>
         </div>
     </div>
